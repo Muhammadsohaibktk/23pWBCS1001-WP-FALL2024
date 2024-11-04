@@ -1,0 +1,106 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff;
+}
+
+.Contact_heading{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact__container {
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    width: 100%;
+    max-width: 990px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    margin-left: 11%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* Form Content */
+.contact__content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Floating Label */
+.input__field {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input__field label {
+    color: #888;
+    pointer-events: none;
+
+}
+
+.input__field input,
+.input__field textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 2px solid #d32f2f; /* Red border for input */
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input Effects */
+.input__field input:focus,
+.input__field textarea:focus {
+    border-color: #ff6666;
+}
+
+.input__field input:focus + label,
+.input__field input:not(:placeholder-shown) + label,
+.input__field textarea:focus + label,
+.input__field textarea:not(:placeholder-shown) + label {
+    top: 5px;
+    font-size: 0.75rem;
+    color: #ff6666;
+}
+
+
+.input__field textarea {
+    /* resize: none; */
+    height: 100px;
+}
+.map__container {
+    /* position: relative; */
+    overflow: hidden;
+    /* padding-top: 56.25%; 16:9 Aspect Ratio */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    /* margin-top: 20px; */
+}
+
+.map__iframe {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 300px;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
